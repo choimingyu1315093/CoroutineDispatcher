@@ -5,3 +5,5 @@ Dispatcher에는 Main, IO, Default 등이 있는데
 Main은 메인 스레드에서 실행되니까 UI 작업할 때,
 IO는 백그라운드 스레드에서 실행되니까 네트워크, 파일 입/출력 작업할 때,
 Default는 복잡한 연산이나 데이터 처리 등 CPU 사용이 많을 때 사용한다.
+
+그리고 launch(Job())은 자식에서 제외!! job.join 해도 기다려주지 않는다. 
